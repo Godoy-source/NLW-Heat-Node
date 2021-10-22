@@ -37,4 +37,4 @@ app.get('/singin/callback', (request, response) => {
     return response.json(code);
 });
 
-serverHttp.listen(porta, () => console.log(`Servidor rodando na porta ${porta}`));
+export { serverHttp, io, porta };

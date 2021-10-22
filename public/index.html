@@ -1,12 +1,10 @@
-22 lines (20 sloc)  668 Bytes
-   
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src *;">
     <title>NLW Heat</title>
   </head>
   <body>
@@ -17,9 +15,9 @@
     ></script>
 
     <script>
-      const socket = io("http://localhost:4000");
+      const socket = io('http://localhost:4000');
 
-      socket.on("new_message", (data) => console.log(data));
+      socket.on('nova_mensagem', (data) => console.log(data));
     </script>
   </body>
 </html>
